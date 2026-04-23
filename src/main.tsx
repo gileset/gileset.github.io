@@ -81,43 +81,28 @@ export const Personal: Component<
                                 width: use(this.mobile).and("auto").or("400px"),
                             }}
                         >
-                                <img
-                                    class={use(this.mobile)
-                                        .and("spinMobile")
-                                        .or("spin")}
-                                    src="/me.png"
-                                />
-
-                            <h1>Hello.</h1>
-                            <div>I am foxmoss.</div>
-                            <div>
-                                I am developer interested in networking and low
-                                level programming.
-                            </div>
+                            <h1>Giles Ellison-Taylor</h1>
                             <br />
+                            <div>About Me:</div>
                             <ul>
                                 <li>
                                     <Link
                                         content={AboutMe}
                                         mobile={use(this.mobile)}
                                     >
-                                        About Me
+                                        Autobiography
                                     </Link>
                                 </li>
+                                <br />
+                            </ul>
+                            <div>My biology work:</div>
+                            <ul>
                                 <li>
                                     <Link
                                         content={Buttons}
                                         mobile={use(this.mobile)}
                                     >
-                                        88x31 Web Buttons
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        content={Contact}
-                                        mobile={use(this.mobile)}
-                                    >
-                                        Other Platforms
+                                        Organisms and Adaptations to Environment
                                     </Link>
                                 </li>
                             </ul>
@@ -132,7 +117,7 @@ export const Personal: Component<
 
 Personal.style = css`
     .spin {
-        width: 200px;
+        width: 150px;
         border-radius: 10px;
         float: right;
         margin: 10px;

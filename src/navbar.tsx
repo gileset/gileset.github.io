@@ -1,6 +1,6 @@
 import { type ComponentChild, css, type Component } from "dreamland/core";
 import { Row } from "./box";
-import { backgroundColor, lightColor } from "./colors";
+import { backgroundColor, backgroundText, lightColor } from "./colors";
 import { Personal } from "./main";
 
 const Blog: Component<{}, {}> = function () {
@@ -8,7 +8,7 @@ const Blog: Component<{}, {}> = function () {
 };
 
 export const NavBar: Component<
-    { url:string, mobile: boolean },
+    { url: string; mobile: boolean },
     {
         pages: Record<string, { name: string; page: ComponentChild }>;
         path: string;
@@ -17,47 +17,65 @@ export const NavBar: Component<
     this.path = "/";
 
     this.pages = {
-        "/": { name: "Personal", page: <Personal mobile={use(this.mobile)} /> },
-        "/blog/": { name: "Blog", page: <Blog /> },
+        "/": {
+            name: "Ellison-Taylor, Giles",
+            page: <Personal mobile={use(this.mobile)} />,
+        },
     };
 
     return (
         <div>
-            <Row mobile={use(this.mobile)}>
-                {
-                    Object.keys(this.pages).map((key) => {
-                        let val = this.pages[key];
+            <div class="bar">
+                {Object.keys(this.pages).map((key) => {
+                    let val = this.pages[key];
 
-                        return (
-                            <span
-                                class={use(this.mobile).and(
+                    return (
+                        <span
+                            class={use(this.mobile)
+                                .and(
                                     "mobile " +
                                         (key === this.path
                                             ? "mobileSelected"
-                                            : "mobileBar")).or(
+                                            : "mobileBar"),
+                                )
+                                .or(
                                     key === this.path
                                         ? "desktopSelected"
                                         : "desktopBar",
                                 )}
-                                on:click={() => {
-                                  window.location.assign(key);
-
-                                }}
-                            >
-                                {val.name}
-                            </span>
-                        );
-                    })}
-                   
-            </Row>
-            {use(this.path).map((path) => this.pages[path].page)
-            }
+                            on:click={() => {
+                                window.location.assign(key);
+                            }}
+                        >
+                            {val.name}
+                        </span>
+                    );
+                })}
+            </div>
+            <div class="lowbar">
+                This is a photo by Kyle Glenn of Guerneville, California in the
+                US. I grew up in the west coast, so the heavily forested walks
+                of my early childhood still hold a place in my heart.
+            </div>
+            {use(this.path).map((path) => this.pages[path].page)}
         </div>
     );
 };
 
 NavBar.style = css`
     :scope {
+    }
+    .bar {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .lowbar {
+        position: absolute;
+        bottom: 10px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 20px;
+        color: ${backgroundText};
     }
     .desktopBar {
         background: ${lightColor};

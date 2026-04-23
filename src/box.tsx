@@ -4,6 +4,7 @@ import { backgroundColor, lightColor, textColor } from "./colors";
 export const Row: Component<
     {
         mobile: boolean;
+        center?: boolean
         children?: ComponentChild;
     },
     {}

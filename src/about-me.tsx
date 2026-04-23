@@ -3,37 +3,103 @@ import { Link, RealLink, SmallLink } from "./link";
 export const AboutMe = () => (
     <div
         style={{
-            "min-width": use(globalThis.mobile.mobile).and("auto").not().and("300px"),
+            "min-width": use(globalThis.mobile.mobile)
+                .and("auto")
+                .not()
+                .and("500px"),
+            "max-height": "600px",
+            "overflow-y": "scroll",
         }}
     >
-        <h2>About Me</h2>
+        <h2>Autobiography</h2>
+        <br />
+        <div class="spin">
+            <img src="/me.png" />
+            Me in Boston for a hackathon on a private island!
+        </div>
+        <div class="spin">
+            <img src="/penn.gif" />
+            This is my friend Penn at an event I hosted.
+        </div>
+        <h4>I am Giles Ellison-Taylor (they/them)</h4>
         <div>
-            You probably know me from my various programming projects or from
-            being in some nerdy comunity.
+            I come from British heritage. My dad immigrated from the greater
+            Manchester area at the turn of the millennia and has lived here ever
+            since.
+        </div>
+        <br />
+        <div>
+            Right now I am a sophomore in high school, I really like how much
+            more autonomy I have in my life. I'm able to fly across the world
+            alone, and make decisions about my future for myself.
+        </div>
+        <br />
+        <div>
+            This website I am making for IB Biology Year 1, and I've enjoined
+            the experience quite a bit. My favorite section was learning about
+            the molecular machines that make up a cell. I like knowing that the
+            basis of life is tiny consistent thoughtless processes. It gives me
+            solace that at a deep level life is consistent, simple.{" "}
+        </div>
+        <br />
+        <div>
+            In the future and years on, I want to learn how the brain works and
+            the processes that govern our neurons and nervous system.
+        </div>
+        <br />
+        <RealLink href="https://xkcd.com/1053/">
+            <img src="https://imgs.xkcd.com/comics/ten_thousand.png" />
+        </RealLink>
+        <div>
+            Above is one of my favorite comics by Randall Monroe. He has some
+            poignant commentary but the one I've attached is just sweet.
         </div>
         <br />
         <br />
-        <h4>Notable Projects</h4>
+        <img src="tobias.jpg" />
+        <div>
+            This is David Cross playing Tobias Funke in Arrested Development.
+            He's one of my favorite TV characters out of everything that I've
+            seen.
+        </div>
+        <br />
+        <div>
+            I run <RealLink href="https://foxmoss.com/blog/">a blog</RealLink>{" "}
+            I'm quite proud of. If you're into computers I'd give it a read.
+        </div>
+        <br />
+        Skills:
         <ul>
             <li>
-                <Link content={Wisp}>Wisp</Link>
+                I am a software developer with skills in low level development.
             </li>
+            <li>I am a proficient writer & communicator (see my blog).</li>
+            <li>I am able to break down complex problems into simpler ones.</li>
         </ul>
         <br />
-        <h4>Other Interests</h4>
-        <ul>
-            <li>Game Development</li>
-            <li>Music Production</li>
-            <li>
-                <Link content={Kpop}>Kpop</Link>
-            </li>
-        </ul>
+        <style>
+            {`
+      .spin{
+        img{
+          width: 250px;
+          border-radius: 10px;
+        }
+        width: 250px;
+        border-radius: 10px;
+        float: right;
+        margin: 10px;
+      }
+      `}
+        </style>
     </div>
 );
 export const Kpop = () => (
     <div
         style={{
-            "min-width": use(globalThis.mobile.mobile).and("auto").not().and( "400px"),
+            "min-width": use(globalThis.mobile.mobile)
+                .and("auto")
+                .not()
+                .and("400px"),
         }}
     >
         <h2>Kpop</h2>
@@ -50,7 +116,10 @@ export const Animate = () => (
 export const Wisp = () => (
     <div
         style={{
-            "min-width": use(globalThis.mobile.mobile).and("auto").not().and("400px"),
+            "min-width": use(globalThis.mobile.mobile)
+                .and("auto")
+                .not()
+                .and("400px"),
         }}
     >
         <h2>Wisp</h2>
@@ -76,7 +145,10 @@ export const Wisp = () => (
 export const Mediaology = () => (
     <div
         style={{
-            "min-width": use(globalThis.mobile.mobile).and("auto").not().and("400px"),
+            "min-width": use(globalThis.mobile.mobile)
+                .and("auto")
+                .not()
+                .and("400px"),
         }}
     >
         <h2>Mediaology</h2>
@@ -96,7 +168,10 @@ export const Buttons = () => {
     return (
         <div
             style={{
-                "min-width": use(globalThis.mobile.mobile).and("auto").not().and("400px"),
+                "min-width": use(globalThis.mobile.mobile)
+                    .and("auto")
+                    .not()
+                    .and("400px"),
             }}
         >
             <h2>88x31 Web Buttons</h2>
@@ -125,7 +200,10 @@ export const DreamlandButton = () => {
     return (
         <div
             style={{
-                "min-width": use(globalThis.mobile.mobile).and("auto").not().and("400px"),
+                "min-width": use(globalThis.mobile.mobile)
+                    .and("auto")
+                    .not()
+                    .and("400px"),
             }}
         >
             I also made this button! Creative Commons 0 if you would like to use
