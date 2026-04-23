@@ -15,9 +15,7 @@ globalThis.mobile = createState({
 
 const App: Component = function () {
     this.cx.mount = () => {
-        if (!import.meta.env.SSR) {
-            globalThis.mobile.mobile = window.screen.width < 500;
-        }
+        globalThis.mobile.mobile = window.screen.width < 500;
     };
 
     return (
@@ -83,14 +81,12 @@ export const Personal: Component<
                                 width: use(this.mobile).and("auto").or("400px"),
                             }}
                         >
-                            <Link content={Animate} mobile={use(this.mobile)}>
                                 <img
                                     class={use(this.mobile)
                                         .and("spinMobile")
                                         .or("spin")}
-                                    src="/pfp.png"
+                                    src="/me.png"
                                 />
-                            </Link>
 
                             <h1>Hello.</h1>
                             <div>I am foxmoss.</div>
@@ -136,13 +132,13 @@ export const Personal: Component<
 
 Personal.style = css`
     .spin {
-        width: 100px;
+        width: 200px;
         border-radius: 10px;
         float: right;
         margin: 10px;
     }
     .spinMobile {
-        width: 100px;
+        width: 200px;
         border-radius: 10px;
     }
     .mobileBox {

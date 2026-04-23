@@ -11,10 +11,11 @@ const entry = await import(resolve("dist/server/main-server.js"));
 
 let template = await readFile(resolve("dist/static/index.html"), "utf8");
 
-for (const  path of ["/"]) {
-	const rendered = await renderSsr(template, entry);
+for (const  path of ["/index.html"]) {
+	const rendered = await renderSsr(template, () => entry.default("/"));
+
 	console.log(
-		`prerendered: ${route}\t${(new TextEncoder().encode(rendered).byteLength / 1024).toFixed(2)}kb`
+		`prerendered: ${path}\t${(new TextEncoder().encode(rendered).byteLength / 1024).toFixed(2)}kb`
 	);
 	let resolved = resolve("dist/static/" + path);
 	await mkdir(dirname(resolved), { recursive: true });

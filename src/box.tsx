@@ -10,9 +10,7 @@ export const Row: Component<
 > = function () {
     return (
         <div class={use(this.mobile).and("mobile").or("desktop")}>
-            {
-              this.children
-            }
+            {this.children}
         </div>
     );
 };
@@ -52,28 +50,26 @@ export const Box: Component<
                 mouseOver = false;
             },
         );
-        if (!import.meta.env.SSR) {
-            document.addEventListener("mousedown", () => {
-                if (mouseOver) {
-                    captured = true;
-                }
-            });
-            document.addEventListener("mouseup", () => {
-                captured = false;
-            });
-            document.addEventListener("mousemove", (mouse: MouseEvent) => {
-                if (captured) {
-                    this.x = this.x + mouse.movementX;
-                    this.y = this.y + mouse.movementY;
-                }
-            });
-        }
+        document.addEventListener("mousedown", () => {
+            if (mouseOver) {
+                captured = true;
+            }
+        });
+        document.addEventListener("mouseup", () => {
+            captured = false;
+        });
+        document.addEventListener("mousemove", (mouse: MouseEvent) => {
+            if (captured) {
+                this.x = this.x + mouse.movementX;
+                this.y = this.y + mouse.movementY;
+            }
+        });
     };
 
     return (
         <div class={use(this.mobile).and("").or("desktop")}>
             <div
-                class={use(this.mobile).and("mobile").or( "main")}
+                class={use(this.mobile).and("mobile").or("main")}
                 style={{
                     top: use(this.y).and(() => {
                         if (this.mobile) {
@@ -104,7 +100,7 @@ export const Box: Component<
                     }
                     return (
                         <div class="close" on:click={() => this.root.remove()}>
-                            {use(this.mobile).and("Close").or( "X")}
+                            {use(this.mobile).and("Close").or("X")}
                         </div>
                     );
                 })}
