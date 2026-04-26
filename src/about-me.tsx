@@ -74,7 +74,7 @@ export const AboutMe = () => (
         </div>
         <br />
         <div>
-            I run <RealLink href="https://foxmoss.com/blog/">a blog</RealLink>{" "}
+            I run <RealLink href="https://foxmoss.com/blog/">a blog (click me!)</RealLink>{" "}
             I'm quite proud of. If you're into computers I'd give it a read.
         </div>
         <br />
