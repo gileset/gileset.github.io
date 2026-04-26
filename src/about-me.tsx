@@ -41,6 +41,16 @@ export const AboutMe = () => (
             basis of life is tiny consistent thoughtless processes. It gives me
             solace that at a deep level life is consistent, simple.{" "}
         </div>
+        Biology Skills:
+        <ul>
+            <li>
+                I can calculate probablities of inheriting genes based on family
+                trees.
+            </li>
+            <li>I can determine the protiens made from source genes.</li>
+            <li>I can examine how related two species are based on DNA.</li>
+        </ul>
+        <br />
         <br />
         <div>
             In the future and years on, I want to learn how the brain works and
@@ -67,15 +77,6 @@ export const AboutMe = () => (
             I run <RealLink href="https://foxmoss.com/blog/">a blog</RealLink>{" "}
             I'm quite proud of. If you're into computers I'd give it a read.
         </div>
-        <br />
-        Skills:
-        <ul>
-            <li>
-                I am a software developer with skills in low level development.
-            </li>
-            <li>I am a proficient writer & communicator (see my blog).</li>
-            <li>I am able to break down complex problems into simpler ones.</li>
-        </ul>
         <br />
         <style>
             {`
@@ -244,6 +245,21 @@ export const Contact = () => {
                     49A955UvYmEBWWTXcxe3vd7YnBpGa85hu88Gx1TrJpELFb6QNLapTJ1SAtVMqrwFePBdnKgpgGdizPsN5MCeDoEA6PF7HW1
                 </div>
             </div>
+        </div>
+    );
+};
+
+export const OnePager = () => {
+    return (
+        <div
+            style={{
+                "min-width": use(globalThis.mobile.mobile)
+                    .and("auto")
+                    .not()
+                    .and("40vw"),
+            }}
+        >
+            <RealLink href="onepager.svg"><img src="onepager.svg" /></RealLink>
         </div>
     );
 };

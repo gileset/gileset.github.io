@@ -3,7 +3,7 @@ import "./index.css";
 import "./wm.css";
 import { Box, Row } from "./box";
 import { Link } from "./link";
-import { AboutMe, Animate, Buttons, Contact } from "./about-me";
+import { AboutMe, Animate, Buttons, Contact, OnePager } from "./about-me";
 import { NavBar } from "./navbar";
 import { backgroundColor, lightColor, textColor } from "./colors";
 
@@ -99,7 +99,7 @@ export const Personal: Component<
                             <ul>
                                 <li>
                                     <Link
-                                        content={Buttons}
+                                        content={OnePager}
                                         mobile={use(this.mobile)}
                                     >
                                         Organisms and Adaptations to Environment
