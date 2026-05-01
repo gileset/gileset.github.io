@@ -74,7 +74,10 @@ export const AboutMe = () => (
         </div>
         <br />
         <div>
-            I run <RealLink href="https://foxmoss.com/blog/">a blog (click me!)</RealLink>{" "}
+            I run{" "}
+            <RealLink href="https://foxmoss.com/blog/">
+                a blog (click me!)
+            </RealLink>{" "}
             I'm quite proud of. If you're into computers I'd give it a read.
         </div>
         <br />
@@ -259,7 +262,86 @@ export const OnePager = () => {
                     .and("40vw"),
             }}
         >
-            <RealLink href="onepager.svg"><img src="onepager.svg" /></RealLink>
+            <RealLink href="onepager.svg">
+                <img src="onepager.svg" />
+            </RealLink>
+        </div>
+    );
+};
+
+export const Mesocosm = () => {
+    return (
+        <div style={{ "max-height": "600px", "overflow-y": "scroll" }}>
+            <h2>Mesocoms</h2>
+            <img
+                src="mesocosm.jpeg"
+                style={{
+                    "max-width": use(globalThis.mobile.mobile)
+                        .and("auto")
+                        .not()
+                        .and("20vw"),
+                    "border-radius": "10px",
+                }}
+            />
+            <br /> 
+            We can learn a lot from studying a mesocosm. Being able to take a
+            small section of life and control the factors means we can extract &
+            analyse specific features of the environment. See how important each
+            part of an environment is for mutual success. For ours though, we
+            were just watching if life can be sustainable without any inputs
+            barring light to an environment.
+            <br /> 
+            <br /> Materials I used:
+            <ul>
+                <li>Two alkaline plastic water bottles</li>
+                <li>A bakers dozen centimeters of rope</li>
+                <li>A sharp thing</li>
+                <li>Water</li>
+                <li>Some water plants</li>
+                <li>Dirt</li>
+                <li>A worm (I named mine Prometheus)</li>
+                <li>A plant sprout</li>
+                <li>Seeds</li>
+                <li>Lots and lots of tape</li>
+            </ul>
+            <br /> 
+            <br /> 
+            Steps I took:
+            <ol>
+                <li>Cut the top half of one of the bottles off.</li>
+                <li>Cut the other bottle's bases off.</li>
+                <li>Recycle the base, so you're left with 3 segments.</li>
+                <li>Run a rope though the segment that is just a top.</li>
+                <li>Put water in the bottle without a top.</li>
+                <li>
+                    Tape the bottle top upside down on the bottle without a top,
+                    so that the water could run up the string to the top half.
+                </li>
+                <li>Lay down some dirt in the upside top.</li>
+                <li>Place a worm, some seeds, and a plant in the dirt.</li>
+                <li>
+                    Trap the worm forever by putting the last segment of bottle
+                    left over it.
+                </li>
+                <li>
+                    Shackle the worm by making the bottle air tight with tape.
+                </li>
+                <li>Enjoy!</li>
+            </ol>
+            <br />
+            Prometheus was entombed on April 23rd 2026.
+            <br /> 
+            <br /> 
+            Observations:
+            <ul>
+                <li>
+                    April 24th 2026, I didn't see condensation on the top half
+                    so I taped it up more.
+                </li>
+                <li>
+                    April 27th 2026, I saw condensation so I left Prometheus be.
+                </li>
+            </ul>
         </div>
     );
 };
