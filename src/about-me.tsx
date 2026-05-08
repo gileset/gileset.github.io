@@ -283,14 +283,14 @@ export const Mesocosm = () => {
                     "border-radius": "10px",
                 }}
             />
-            <br /> 
+            <br />
             We can learn a lot from studying a mesocosm. Being able to take a
             small section of life and control the factors means we can extract &
             analyse specific features of the environment. See how important each
             part of an environment is for mutual success. For ours though, we
             were just watching if life can be sustainable without any inputs
             barring light to an environment.
-            <br /> 
+            <br />
             <br /> Materials I used:
             <ul>
                 <li>Two alkaline plastic water bottles</li>
@@ -304,18 +304,19 @@ export const Mesocosm = () => {
                 <li>Seeds</li>
                 <li>Lots and lots of tape</li>
             </ul>
-            <br /> 
-            <br /> 
+            <br />
+            <br />
             Steps I took:
             <ol>
                 <li>Cut the top half of one of the bottles off.</li>
                 <li>Cut the other bottle's bases off.</li>
                 <li>Recycle the base, so you're left with 3 segments.</li>
-                <li>Run a rope though the segment that is just a top.</li>
+                <li>Run a rope though the segment that is a top & a shaft.</li>
                 <li>Put water in the bottle without a top.</li>
                 <li>
-                    Tape the bottle top upside down on the bottle without a top,
-                    so that the water could run up the string to the top half.
+                    Tape the bottle top & shaft upside down on the bottle
+                    without a top, so that the water could run up the string to
+                    the top half.
                 </li>
                 <li>Lay down some dirt in the upside top.</li>
                 <li>Place a worm, some seeds, and a plant in the dirt.</li>
@@ -330,8 +331,8 @@ export const Mesocosm = () => {
             </ol>
             <br />
             Prometheus was entombed on April 23rd 2026.
-            <br /> 
-            <br /> 
+            <br />
+            <br />
             Observations:
             <ul>
                 <li>
@@ -339,9 +340,110 @@ export const Mesocosm = () => {
                     so I taped it up more.
                 </li>
                 <li>
-                    April 27th 2026, I saw condensation so I left Prometheus be.
+                    April 27th 2026, I saw condensation so I stoped taping up
+                    the bottle. I didn't see any change in the water, soil or
+                    worm.
+                </li>
+                <li>
+                    May 1st 2026, I drew the mesocosm. Little changes from the
+                    last observation. Water line touches the cap.{" "}
+                    <img
+                        src="may1.jpeg"
+                        style={{
+                            "max-width": use(globalThis.mobile.mobile)
+                                .and("auto")
+                                .not()
+                                .and("20vw"),
+                            "border-radius": "10px",
+                        }}
+                    />
+                </li>
+                <li>
+                    May 6th 2026, I have 11 sprouts growing in my mesocosm now.
+                    The waterline is at 6 cm. The bottom of the cap is at
+                    roughly 6.5 cm. The worm is still no where to be seen.
+                    <img
+                        src="may6.jpeg"
+                        style={{
+                            "max-width": use(globalThis.mobile.mobile)
+                                .and("auto")
+                                .not()
+                                .and("20vw"),
+                            "border-radius": "10px",
+                        }}
+                    />
                 </li>
             </ul>
+        </div>
+    );
+};
+
+export const InvasiveSpecies = () => {
+    return (
+        <div
+            style={{
+                "min-width": use(globalThis.mobile.mobile)
+                    .and("auto")
+                    .not()
+                    .and("40vw"),
+                background: "url(wormbg.jpg)",
+                "background-size": "cover",
+                "background-position": "center",
+                "border-radius": "10px",
+                padding: "10px",
+            }}
+        >
+            <h2>Invasive Species - Earthworms</h2>
+
+            <div>
+                Invasive species are species that were introduced and have
+                spread out to cause harm to the native community.
+            </div>
+            <br />
+            <div>
+                Here we'll be talking about the spread of earthworms in
+                Minnesota. Earthworms originate from Europe, the Pacific
+                Northwest, and the South Eastern US. The stayed largely out of
+                Minnesota before European settlement because of out harsh
+                climate. Now the earthworms have come and to Minnesotas forests
+                and they're slowly spreading largely due to human involvement.
+                The spread has two culprits. One: fishing bait, and two:
+                gardening of plants brought of over from Europe.
+            </div>
+            <br />
+            <div>
+                The Minnesotan ecosystem is not fit to handle earthworms. Our
+                forests are built on a layer of duff, duff is built up of fallen
+                leaves and decomposing organic matter. When the earthworms show
+                up they feed on the duff. Worms are decomposers after all.
+                Without the duff, seedlings, many ferns, and flowers begin to
+                die.
+            </div>
+            <br />
+            <div>
+                So how do we prevent earthworms from spreading? Keeping worms
+                bought for gardening or fishing out of nature and properly
+                disposed off is the only real viable way of stopping the spread.
+                It's nearing impossible to tear up our forests removing
+                earthworms without damaging the ecosystem more then it already
+                has.
+            </div>
+            <br />
+            <RealLink href="https://www.dnr.state.mn.us/invasives/terrestrialanimals/earthworms/index.html">
+                Info from
+                dnr.state.mn.us/invasives/terrestrialanimals/earthworms/index.html.
+            </RealLink>
+            <br />
+            <div style={{ "max-height": "100px", display: "flex" }}>
+                <img
+                    src="invadedforrest.jpg"
+                    style={{ "object-fit": "contain" }}
+                />
+                <img src="earthworm.jpeg" style={{ "object-fit": "contain" }} />
+            </div>
+            <div>
+              First photo of is a forest invaded by earthworms, the second photo is of an earthworm by Julian Zwengel.
+            </div>
         </div>
     );
 };
