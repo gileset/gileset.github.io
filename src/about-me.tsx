@@ -442,7 +442,119 @@ export const InvasiveSpecies = () => {
                 <img src="earthworm.jpeg" style={{ "object-fit": "contain" }} />
             </div>
             <div>
-              First photo of is a forest invaded by earthworms, the second photo is of an earthworm by Julian Zwengel.
+                First photo of is a forest invaded by earthworms, the second
+                photo is of an earthworm by Julian Zwengel.
+            </div>
+        </div>
+    );
+};
+
+export const EcologicalRelationships = () => {
+    return (
+        <div
+            style={{
+                "max-width": use(globalThis.mobile.mobile)
+                    .and("auto")
+                    .not()
+                    .and("40vw"),
+                "max-height": "600px",
+                "overflow-y": "scroll",
+            }}
+        >
+            <h2>Ecological Relationships</h2>
+            <div class="spin">
+                <div>
+                    <img src="polaroid.png" />
+                    Photo by Annie Spratt
+                </div>
+                <br />
+                <div>
+                    <img src="garlicmustard.jpg" />
+                    Garlic Mustard, By O. Pichard - Own work, CC BY-SA 3.0
+                </div>
+                <br />
+                <div>
+                    <img src="garlicmustard2.jpg" />
+                    Photo by sannse, Tapeley Park, Instow, North Devon, 14 May
+                    2004.
+                </div>
+            </div>
+            <style>
+                {`
+          .spin{
+            img{
+              width: 250px;
+              border-radius: 10px;
+            }
+            width: 250px;
+            border-radius: 10px;
+            float: right;
+            margin: 10px;
+          }
+          `}
+            </style>
+            <div>
+                There are many different types of ecological relationships!
+                Here's most of them:
+            </div>
+            <ul>
+                <li>
+                    <b>Parasitism</b> When one species relies on another, to the
+                    detriment of the host species.
+                </li>
+                <li>
+                    <b>Pathogenicity</b> When one species infects a host species
+                    causing illness or disease.
+                </li>
+                <li>
+                    <b>Allelopathy</b> When one species releases chemicals to
+                    impact growth or behavior of another species.
+                </li>
+                <li>
+                    <b>Mutualism</b> When both species benefit from a
+                    relationship.
+                </li>
+                <li>
+                    <b>Commensalism</b> When one species benefits to the
+                    indifference to the host species.
+                </li>
+                <li>
+                    <b>Predator-Prey</b> When a predator species hunts and eats
+                    a prey species.
+                </li>
+                <li>
+                    <b>Intraspecific competition</b> When multiple organisms of
+                    the same species fight for the same resources (i.e. a mate).
+                </li>
+                <li>
+                    <b>Intraspecific cooperation</b> When multiple organisms of
+                    the same species have a relationship for mutual benefit (i.e
+                    a pack).
+                </li>
+            </ul>
+            <div>
+                Lets look at an example of allelopathy a little more because I
+                think it's the hardest to understand.
+            </div>
+            <br />
+            <br />
+            <div>
+                <i>Alliaria petiolata</i> or garlic mustard is an plant species
+                with an allelopathic qualities. It produces chemicals like
+                sinigrin that inhibit the fungi that help trees grow. Giving the
+                garlic mustard a leg up when trying to spread and grow.
+            </div>
+
+            <div>
+                Sources:
+                <br />
+                <RealLink href="https://en.wikipedia.org/wiki/Allelopathy#Examples">
+                    en.wikipedia.org/wiki/Allelopathy
+                </RealLink>
+                <br />
+                <RealLink href="https://www.dnr.state.mn.us/invasives/terrestrialplants/herbaceous/garlicmustard.html">
+                    dnr.state.mn.us/invasives/terrestrialplants/herbaceous/garlicmustard.html
+                </RealLink>
             </div>
         </div>
     );
