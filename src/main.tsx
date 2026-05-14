@@ -3,7 +3,7 @@ import "./index.css";
 import "./wm.css";
 import { Box, Row } from "./box";
 import { Link } from "./link";
-import { AboutMe, Animate, Buttons, Contact, EcologicalRelationships, InvasiveSpecies, Mesocosm, OnePager } from "./about-me";
+import { AboutMe, Animate, Buttons, CarbotFootprint, Contact, EcologicalRelationships, InvasiveSpecies, Mesocosm, OnePager } from "./about-me";
 import { NavBar } from "./navbar";
 import { backgroundColor, lightColor, textColor } from "./colors";
 
@@ -127,6 +127,14 @@ export const Personal: Component<
                                         mobile={use(this.mobile)}
                                     >
                                         Ecological Relationships
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        content={CarbotFootprint}
+                                        mobile={use(this.mobile)}
+                                    >
+                                        Carbon Footprints & The Carbon Cycle
                                     </Link>
                                 </li>
                             </ul>

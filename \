@@ -648,37 +648,8 @@ export const CarbotFootprint = () => {
 
             <div>
                 There's a lot you can do to lower your carbon you footprint
-                within reason. Driving less, and when you do drive, drive an EV,
-                flying less, eating locally, eating vegan or vegetarian, are all
-                things that would lower your carbon footprint.
-            </div>
-            <br />
-
-            <RealLink href="https://xkcd.com/2889/">
-                <div class="spin2">
-                    <img src="http://imgs.xkcd.com/comics/greenhouse_effect.png" />
-                </div>
-            </RealLink>
-
-            <br />
-            <div>
-                Sources:
-                <br />
-                <RealLink href="https://en.wikipedia.org/wiki/Phytoplankton">
-                    https://en.wikipedia.org/wiki/Phytoplankton
-                </RealLink>
-                <br />
-                <RealLink href="https://en.wikipedia.org/wiki/Ctenophora">
-                    https://en.wikipedia.org/wiki/Ctenophora
-                </RealLink>
-                <br />
-                <RealLink href="https://www.footprintcalculator.org/">
-                    https://www.footprintcalculator.org/
-                </RealLink>
-                <br />
-                <RealLink href="https://xkcd.com/2889/">
-                    https://xkcd.com/2889/
-                </RealLink>
+                within reason. Driving less, and when you do drive, drive an EV, flying less, eating locally, eating
+                vegan or vegetarian, are all things that would lower your carbon footprint.
             </div>
         </div>
     );
