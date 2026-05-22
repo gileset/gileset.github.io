@@ -373,6 +373,37 @@ export const Mesocosm = () => {
                         }}
                     />
                 </li>
+                <li>
+                    May 13th 2026, A few more sprouts came up in this time!
+                    <img
+                        src="may13.jpeg"
+                        style={{
+                            "max-width": use(globalThis.mobile.mobile)
+                                .and("auto")
+                                .not()
+                                .and("20vw"),
+                            "border-radius": "10px",
+                        }}
+                    />
+                </li>
+                <li>
+                    May 20th 2026, Even more sprouts are up now, but in turn the
+                    main leaf I started the mescosm with now has a large gray
+                    spot growing by the day. The water line is still holding
+                    strong at arround 6 cm (5.9 if I'm being charitable) it
+                    might be the case that the new sprouts are taking nutrients
+                    from the leaf?
+                    <img
+                        src="may20.jpeg"
+                        style={{
+                            "max-width": use(globalThis.mobile.mobile)
+                                .and("auto")
+                                .not()
+                                .and("20vw"),
+                            "border-radius": "10px",
+                        }}
+                    />
+                </li>
             </ul>
         </div>
     );
@@ -586,8 +617,26 @@ export const CarbotFootprint = () => {
             float: right;
             margin: 10px;
           }
+          .spin{
+            img{
+              width: 250px;
+              border-radius: 10px;
+            }
+            width: 250px;
+            border-radius: 10px;
+            float: right;
+            margin: 10px;
+          }
+
           `}
             </style>
+            <div class="spin">
+                <div>
+                    <img src="carbon.png" />
+                    Photo by Сергей Крылов
+                </div>
+            </div>
+
             <div>
                 Carbon is so important because all life is are based carbon
                 compounds. From the smallest phytoplankton to the largest hippo
@@ -654,9 +703,9 @@ export const CarbotFootprint = () => {
             </div>
             <br />
 
-            <RealLink href="https://xkcd.com/2889/">
+            <RealLink href="https://xkcd.com/3226/">
                 <div class="spin2">
-                    <img src="http://imgs.xkcd.com/comics/greenhouse_effect.png" />
+                    <img src="https://imgs.xkcd.com/comics/home_solar.png" />
                 </div>
             </RealLink>
 
@@ -679,6 +728,246 @@ export const CarbotFootprint = () => {
                 <RealLink href="https://xkcd.com/2889/">
                     https://xkcd.com/2889/
                 </RealLink>
+            </div>
+        </div>
+    );
+};
+
+export const GreenhouseEffect = () => {
+    return (
+        <div
+            style={{
+                "min-width": use(globalThis.mobile.mobile)
+                    .and("auto")
+                    .not()
+                    .and("40vw"),
+                "max-height": "600px",
+                "overflow-y": "scroll",
+            }}
+        >
+            <h2>Greenhouse Effect and Climate Change</h2>
+
+            <style>
+                {`
+          .spin2{
+            img{
+              width: 100%;
+              border-radius: 10px;
+              display: block;
+            }
+            width: 100%;
+            border-radius: 10px;
+            float: right;
+            margin: 10px;
+          }
+          .spin{
+            img{
+              width: 250px;
+              border-radius: 10px;
+            }
+            width: 250px;
+            border-radius: 10px;
+            float: right;
+            margin: 10px;
+          }
+
+          `}
+            </style>
+            <div class="spin">
+                <div>
+                    <img src="greenhouse.png" />
+                    Photo by Annie Spratt
+                </div>
+            </div>
+            <h3>Act 1: The Greenhouse Effect</h3>
+            <br />
+            <div>
+                Earth has an atmosphere made up of many gasses, lots of oxygen,
+                lots of nitrogen. Oxygen and nitrogen don't absorb long wave
+                radiation, so long wave radiation just passes through and
+                doesn't heat up the atmosphere. Greenhouse gasses like methane
+                CO2 and a whole cabal of gasses do. They make up 1% of
+                atmosphere (D4.3.1) but are the biggest factor in heating up our
+                planet. The short wave radiation from the sun bounces off the
+                planet as long wave radiation and heats the planet a little.
+                That long wave radiation then can get bounced back by greenhouse
+                gasses, and when the hit the earth again they heat the planet
+                even more. That's the greenhouse effect, thats what keeps our
+                planet at the temp that it is (D4.3.1) and ready for life.
+            </div>
+            <br />
+            <div>
+                Human activity is a huge driver of both releasing methane and
+                CO2, anthropogenic gasses, contributing significantly to the
+                rise of the intensity the greenhouse effect has on our world.
+                Industries, like transport, energy, manufacturing, and
+                agriculture are massive contributors to greenhouse gas
+                emissions.
+            </div>
+            <iframe
+                src="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=line"
+                loading="lazy"
+                style="width: 100%; height: 600px; border: 0px none;"
+                allow="web-share; clipboard-write"
+            ></iframe>
+            <br />
+            <div>
+                Based on the daily recording of carbon dioxide levels at the
+                Mauna Loa Observatory in Hawaii we can see the steady rise.
+                Becoming nearly 100 pm more concentrated over a period from 1960
+                to 2007 (13.4 - Climate Change Evidence). We can see that the
+                climate is very much changing imperially.
+            </div>
+            <br />
+            <div>
+                Have you ever been down, down south to the great American
+                southwest? The Californias, the Nevadas, the New Mexicos of the
+                world. They're home to some of the largest ponderosa pine
+                population. Their population has been has been dwindling in
+                recent years with ecologists suggesting they aren't coming back.
+                The first major killer is the global rising temperatures from to
+                the anthropogenic greenhouse gases heating the earth and causing
+                constant drought conditions. Bubbles form under the tree bark
+                without enough moisture and weaken a tree's structure. The other
+                killer is the lack of wildfires. Without a steady stream of
+                wildfires culling weak population, you end up with packed
+                forests that are incredibly vulnerable. When a fire does rip
+                through, it means total ecological destruction. There are groups
+                attempting to stop the death of the ponderosa but with a largely
+                unreceptive government its hard to say how much progress can
+                really get made.
+                <br />
+                To find out more read the below article (all information was
+                sourced from the below article):
+            </div>
+            <br />
+            <div>
+                <iframe
+                    src="nyt.pdf"
+                    loading="lazy"
+                    style="width: 100%; height: 600px; border: 0px none;"
+                    allow="web-share; clipboard-write"
+                ></iframe>
+            </div>
+            <br />
+            <h3>Act 2: Sustainability</h3>
+            <br />
+            <div>
+                A stable ecosystem needs a steady supply of energy (this is
+                normally the sun), nutrient cycling without leakages, and high
+                genetic diversity within a population (D4.2.2). Good nutrient
+                cycling means that chemicals like nitrogen are washing out
+                downstream and entering a new ecosystem. And high genetic
+                diversity means that if one member of a species is vulnerable to
+                a certain threat, there's resistance to that threat spreading.
+                This is important for keystone species specifically, because the
+                ecosystem relies on them, if they die the ecosystem collapses
+                like an arch without a keystone. The only way a stable ecosystem
+                can stay stable is with resilience to bounce back after a
+                threat, and resistance against a threat in the moment. With both
+                these qualities, things like droughts and viruses can be
+                overcome.
+            </div>
+            <br />
+            <div>
+                Eutrophication is another threat, but one cause directly by
+                humans. Plants use nutrients in the soil, overtime without
+                enough decomposers or specific crop the soil will run out of
+                nutrients and plants grown in it will be less fit. To combat
+                this human agriculture takes advantage of phosphate and nitrate
+                high fertilizer to re-enrich the soil. Water naturally drains
+                through soil, from rainfall or farming. And water naturally
+                picks up nutrients as it travels downstream. So it happens that
+                the phosphates and nitrates end up in our ponds and lakes. That
+                process, the nutrients entering the water supply is
+                eutrophication. So these eutrophized lakes are home to algae, as
+                well as other other water plants that feed off of phosphates and
+                nitrates, giving them the ability for mass population growth.
+                The population is unable to be sustained so algae on mass dies
+                and float to the surface. The dead algae starts to block out the
+                light for the other water plants, causing even more death. In
+                swing the saphtrophic bacteria begin feeding off the newly dead,
+                saphtrophic bacteria that also takes in oxygen. Now that there's
+                less oxygen in the water, the water ends up with a lower ph,
+                higher acidity. Fish have a range of tolerance for acidity, and
+                many fish begin to die in the new water. All of this is sourced
+                from D4.2.6 to D4.2.7.{" "}
+            </div>
+            <br />
+            <div>
+                So we've talked about things that hurt the sustainability of an
+                ecosystem. When is it too much? Ecosystem rely on feedback
+                loops, the Amazon rainforest gets as much rain as it does
+                because of high amounts of plant transpiration (water from
+                plants evaporating) in the region. So If deforestation run
+                rampant, and suddenly the rainforest is starting to look a lot
+                more like just a forest. Then eventually it'll reach a tipping
+                point, it'll convert from one stable ecosystem to another.
+                There's just not enough water flowing through the system. If
+                there's not enough water, it gives the opportunity for a single
+                forest fire to rip through and take out the entire forest. At
+                that point there's no going back. Just not enough rain to make
+                the trees that make the rain. (D4.2.3)
+            </div>
+            <br />
+            <div>
+                What can humans to to prevent the decline of these ecosystems
+                even in the face of crossing this tipping points? We need to
+                only take from an ecosystem what it has to give. That yield is
+                called the "maximum sustainable yield" and means that what we
+                take shouldn't hurt the population, (D4.2.6)
+            </div>
+            <br />
+            <h3>Act 3: Climate Change</h3>
+            <br />
+            <div>
+                Anthropogenic gases encouraging the greenhouse effect (as
+                discussed in Act 1) are the main driver of climate change.
+                That's at least the genesis of the modern climate change
+                problem, but the deeper our climate enters it's problem the
+                harder it is to stop. Positive feedback loops are caused by
+                loops that cause themselves. All you need is the initial kick to
+                start melting our permafrost. Once the permafrost begins to melt
+                it release they trapped methane in the dead plants. Methane of
+                course is a greenhouse gas and begins to warm to the planet even
+                more, melting more permafrost, releasing more methane (D4.3.2).
+                It becomes much harder to just reduce our greenhouse gases while
+                we also need to make up for thousands of these little positive
+                feedback loops.
+            </div>
+            <br />
+            <div>
+                Climate change also has an effect on other ecosystems like coral
+                reefs. Oceans are carbon sinks, but at a cost. While the ocean
+                can take in CO2 from the atmosphere, higher CO2 in the ocean can
+                also mean the collapse of coral reefs. Corals need carbonate
+                ions to build their structures. Through a series of chemical
+                reactions, more CO2 means less concentrated carbonate ions
+                making it harder for corals to build their reefs (D4.3.7). Reefs
+                of course are ubernexuses for ocean biodiversity so reduced
+                reefs means less biodiversity.
+            </div>
+            <br />
+            <div>
+                Animal behavior also changes in response to climate change. The
+                higher you go the colder the temperatures, so hotter
+                temperatures at traditional layers of elevation of evolution
+                pushes organisms to climb. The range of elevations at which
+                habitats can support certain organisms to live at is rising on
+                mass. Mountain dwelling, or montane organisms with easy access
+                to elevated land are excepted to move up slope as climate change
+                continues to get work. (D4.3.6)
+            </div>
+            <br />
+            <div>
+                Greenhouse gases, as should have been blindingly obvious by the
+                previous paragraphs, are a huge threat. So investing in
+                technology that sequesters the rising of carbon in our
+                atmosphere would only be a boon. Carbon capture is one
+                technology that could slow climate change, or natural carbon
+                sequestering like planting plants might be viable. Specifically
+                planting trees can be a natural form of carbon sequestering.
+                (D4.3.8)
             </div>
         </div>
     );
