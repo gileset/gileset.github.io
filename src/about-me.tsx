@@ -259,7 +259,7 @@ export const OnePager = () => {
                 "min-width": use(globalThis.mobile.mobile)
                     .and("auto")
                     .not()
-                    .and("40vw"),
+                    .and("60vw"),
             }}
         >
             <RealLink href="onepager.svg">
@@ -340,13 +340,14 @@ export const Mesocosm = () => {
                     so I taped it up more.
                 </li>
                 <li>
-                    April 27th 2026, I saw condensation so I stoped taping up
+                    April 27th 2026, I saw condensation so I stopped taping up
                     the bottle. I didn't see any change in the water, soil or
                     worm.
                 </li>
                 <li>
                     May 1st 2026, I drew the mesocosm. Little changes from the
-                    last observation. Water line touches the cap.{" "}
+                    last observation. Water line touches the bottom of the cap
+                    being at 6.5cm.{" "}
                     <img
                         src="may1.jpeg"
                         style={{
@@ -361,7 +362,7 @@ export const Mesocosm = () => {
                 <li>
                     May 6th 2026, I have 11 sprouts growing in my mesocosm now.
                     The waterline is at 6 cm. The bottom of the cap is at
-                    roughly 6.5 cm. The worm is still no where to be seen.
+                    roughly 6.5 cm. The worm is still nowhere to be seen.
                     <img
                         src="may6.jpeg"
                         style={{
@@ -374,7 +375,8 @@ export const Mesocosm = () => {
                     />
                 </li>
                 <li>
-                    May 13th 2026, A few more sprouts came up in this time!
+                    May 13th 2026, A two to three more sprouts came up when I
+                    checked! No other major changes.
                     <img
                         src="may13.jpeg"
                         style={{
@@ -388,11 +390,12 @@ export const Mesocosm = () => {
                 </li>
                 <li>
                     May 20th 2026, Even more sprouts are up now, but in turn the
-                    main leaf I started the mescosm with now has a large gray
+                    main leaf I started the mesocosm with now has a large gray
                     spot growing by the day. The water line is still holding
-                    strong at arround 6 cm (5.9 if I'm being charitable) it
-                    might be the case that the new sprouts are taking nutrients
-                    from the leaf?
+                    strong at around 6 cm (5.9 if I'm being charitable) it might
+                    be the case that the new sprouts are taking nutrients from
+                    the leaf? I also noticed a small organism swimming in the
+                    water.
                     <img
                         src="may20.jpeg"
                         style={{
@@ -416,7 +419,7 @@ export const InvasiveSpecies = () => {
                 "min-width": use(globalThis.mobile.mobile)
                     .and("auto")
                     .not()
-                    .and("40vw"),
+                    .and("60vw"),
                 background: "url(wormbg.jpg)",
                 "background-size": "cover",
                 "background-position": "center",
@@ -434,9 +437,9 @@ export const InvasiveSpecies = () => {
             <div>
                 Here we'll be talking about the spread of earthworms in
                 Minnesota. Earthworms originate from Europe, the Pacific
-                Northwest, and the South Eastern US. The stayed largely out of
-                Minnesota before European settlement because of out harsh
-                climate. Now the earthworms have come and to Minnesotas forests
+                Northwest, and the South Eastern US. They stayed largely out of
+                Minnesota before European settlement because of our harsh
+                climate. Now the earthworms have come and to Minnesota's forests
                 and they're slowly spreading largely due to human involvement.
                 The spread has two culprits. One: fishing bait, and two:
                 gardening of plants brought of over from Europe.
@@ -487,7 +490,7 @@ export const EcologicalRelationships = () => {
                 "max-width": use(globalThis.mobile.mobile)
                     .and("auto")
                     .not()
-                    .and("40vw"),
+                    .and("60vw"),
                 "max-height": "600px",
                 "overflow-y": "scroll",
             }}
@@ -598,7 +601,7 @@ export const CarbotFootprint = () => {
                 "min-width": use(globalThis.mobile.mobile)
                     .and("auto")
                     .not()
-                    .and("40vw"),
+                    .and("60vw"),
                 "max-height": "600px",
                 "overflow-y": "scroll",
             }}
@@ -640,7 +643,7 @@ export const CarbotFootprint = () => {
             <div>
                 Carbon is so important because all life is are based carbon
                 compounds. From the smallest phytoplankton to the largest hippo
-                or like lion, its all carbon compound turtles all the way down.
+                or lion, its all carbon compound turtles all the way down.
             </div>
             <br />
             <div>
@@ -713,6 +716,10 @@ export const CarbotFootprint = () => {
             <div>
                 Sources:
                 <br />
+                <RealLink href="https://en.wikipedia.org/wiki/Carbon">
+                    https://en.wikipedia.org/wiki/Carbon
+                </RealLink>
+                <br />
                 <RealLink href="https://en.wikipedia.org/wiki/Phytoplankton">
                     https://en.wikipedia.org/wiki/Phytoplankton
                 </RealLink>
@@ -740,13 +747,12 @@ export const GreenhouseEffect = () => {
                 "min-width": use(globalThis.mobile.mobile)
                     .and("auto")
                     .not()
-                    .and("40vw"),
+                    .and("60vw"),
                 "max-height": "600px",
                 "overflow-y": "scroll",
             }}
         >
             <h2>Greenhouse Effect and Climate Change</h2>
-
             <style>
                 {`
           .spin2{
@@ -787,13 +793,19 @@ export const GreenhouseEffect = () => {
                 radiation, so long wave radiation just passes through and
                 doesn't heat up the atmosphere. Greenhouse gasses like methane
                 CO2 and a whole cabal of gasses do. They make up 1% of
-                atmosphere (D4.3.1) but are the biggest factor in heating up our
-                planet. The short wave radiation from the sun bounces off the
-                planet as long wave radiation and heats the planet a little.
-                That long wave radiation then can get bounced back by greenhouse
-                gasses, and when the hit the earth again they heat the planet
-                even more. That's the greenhouse effect, thats what keeps our
-                planet at the temp that it is (D4.3.1) and ready for life.
+                atmosphere but are the biggest factor in heating up our planet.
+                The short wave radiation from the sun bounces off the planet as
+                long wave radiation and heats the planet a little. That long
+                wave radiation then can get bounced back by greenhouse gasses,
+                and when the hit the earth again they heat the planet even more.
+                That's the greenhouse effect, thats what keeps our planet at the
+                temp that it is and ready for life.
+            </div>
+            <br />
+            <div>
+                Similar things happen in real greenhouses, where heat is trapped
+                by the glass or transparent material instead of greenhouse
+                gasses.
             </div>
             <br />
             <div>
@@ -823,10 +835,10 @@ export const GreenhouseEffect = () => {
                 Have you ever been down, down south to the great American
                 southwest? The Californias, the Nevadas, the New Mexicos of the
                 world. They're home to some of the largest ponderosa pine
-                population. Their population has been has been dwindling in
-                recent years with ecologists suggesting they aren't coming back.
-                The first major killer is the global rising temperatures from to
-                the anthropogenic greenhouse gases heating the earth and causing
+                population. Their population has been dwindling in recent years
+                with ecologists suggesting they aren't coming back. The first
+                major killer is the global rising temperatures from to the
+                anthropogenic greenhouse gases heating the earth and causing
                 constant drought conditions. Bubbles form under the tree bark
                 without enough moisture and weaken a tree's structure. The other
                 killer is the lack of wildfires. Without a steady stream of
@@ -855,23 +867,31 @@ export const GreenhouseEffect = () => {
             <div>
                 A stable ecosystem needs a steady supply of energy (this is
                 normally the sun), nutrient cycling without leakages, and high
-                genetic diversity within a population (D4.2.2). Good nutrient
-                cycling means that chemicals like nitrogen are washing out
-                downstream and entering a new ecosystem. And high genetic
-                diversity means that if one member of a species is vulnerable to
-                a certain threat, there's resistance to that threat spreading.
-                This is important for keystone species specifically, because the
-                ecosystem relies on them, if they die the ecosystem collapses
-                like an arch without a keystone. The only way a stable ecosystem
-                can stay stable is with resilience to bounce back after a
-                threat, and resistance against a threat in the moment. With both
-                these qualities, things like droughts and viruses can be
-                overcome.
+                genetic diversity within a population. Good nutrient cycling
+                means that chemicals like nitrogen aren't washing out downstream
+                and entering a new ecosystem. And high genetic diversity means
+                that if one member of a species is vulnerable to a certain
+                threat, there's resistance to that threat spreading. This is
+                important for keystone species specifically, because the
+                ecosystem relies on them, if they die the ecosystem collapses,
+                or the ecosystem morphs and cuts out many of the species that
+                were previously able to live together. The only way a stable
+                ecosystem can stay stable is with resilience to bounce back
+                after a threat, and resistance against a threat in the moment.
+                With both these qualities, things like droughts and viruses can
+                be overcome and the ecosystem can exist for unlimited time
+                periods.
             </div>
             <br />
+            <div class="spin">
+                <div>
+                    <img src="usgs.jpg" />
+                    Photo by the United States Geological Survey
+                </div>
+            </div>
             <div>
-                Eutrophication is another threat, but one cause directly by
-                humans. Plants use nutrients in the soil, overtime without
+                Eutrophication is another threat, but one caused directly by
+                humans. Plants use nutrients in the soil, over time without
                 enough decomposers or specific crop the soil will run out of
                 nutrients and plants grown in it will be less fit. To combat
                 this human agriculture takes advantage of phosphate and nitrate
@@ -889,9 +909,10 @@ export const GreenhouseEffect = () => {
                 swing the saphtrophic bacteria begin feeding off the newly dead,
                 saphtrophic bacteria that also takes in oxygen. Now that there's
                 less oxygen in the water, the water ends up with a lower ph,
-                higher acidity. Fish have a range of tolerance for acidity, and
-                many fish begin to die in the new water. All of this is sourced
-                from D4.2.6 to D4.2.7.{" "}
+                higher acidity. Fish can only tolerate a specific range for
+                acidity, thus many fish begin to die in the new water. The
+                ecosystem colapses and isn't sustainable just from small human
+                actions.
             </div>
             <br />
             <div>
@@ -900,14 +921,15 @@ export const GreenhouseEffect = () => {
                 loops, the Amazon rainforest gets as much rain as it does
                 because of high amounts of plant transpiration (water from
                 plants evaporating) in the region. So If deforestation run
-                rampant, and suddenly the rainforest is starting to look a lot
-                more like just a forest. Then eventually it'll reach a tipping
+                rampant, and suddenly whats left of the rainforest is starting
+                to look a lot more like just a forest. It'll reach a tipping
                 point, it'll convert from one stable ecosystem to another.
                 There's just not enough water flowing through the system. If
                 there's not enough water, it gives the opportunity for a single
                 forest fire to rip through and take out the entire forest. At
                 that point there's no going back. Just not enough rain to make
-                the trees that make the rain. (D4.2.3)
+                the trees that make the rain, so the rainforest could then just
+                shift into being a grassland or another stable ecosystem.
             </div>
             <br />
             <div>
@@ -915,7 +937,16 @@ export const GreenhouseEffect = () => {
                 even in the face of crossing this tipping points? We need to
                 only take from an ecosystem what it has to give. That yield is
                 called the "maximum sustainable yield" and means that what we
-                take shouldn't hurt the population, (D4.2.6)
+                take should still allow the population we take from to grow or
+                maintain size. That's proactive, but how do you help an
+                ecosystem that has already changed? Rewiliding are the reactive
+                measures, and breaks down into two kinds of actions. Actions
+                that redistribute seeds, reintegrate keystone species or
+                reconnect natural ecosystems all bring an ecosystem back to
+                where and once was. Then actions that remove invasive species
+                keep out what is new. Rewiliding is hard work, but there's been
+                successes at the Hinewai Reserve in New Zealand, not all of our
+                ecosystems are fated to be forever changed.
             </div>
             <br />
             <h3>Act 3: Climate Change</h3>
@@ -925,15 +956,16 @@ export const GreenhouseEffect = () => {
                 discussed in Act 1) are the main driver of climate change.
                 That's at least the genesis of the modern climate change
                 problem, but the deeper our climate enters it's problem the
-                harder it is to stop. Positive feedback loops are caused by
-                loops that cause themselves. All you need is the initial kick to
-                start melting our permafrost. Once the permafrost begins to melt
-                it release they trapped methane in the dead plants. Methane of
-                course is a greenhouse gas and begins to warm to the planet even
-                more, melting more permafrost, releasing more methane (D4.3.2).
-                It becomes much harder to just reduce our greenhouse gases while
-                we also need to make up for thousands of these little positive
-                feedback loops.
+                harder it is to stop. Positive feedback loops are loops that
+                cause themselves. All you need is the initial kick to start
+                melting our permafrost. Once the permafrost begins to melt it
+                exposes the waterloged detritus to the air and it begins release
+                methane. Methane of course is a greenhouse gas and begins to
+                warm the planet even more, melting more permafrost, releasing
+                more methane. It becomes much harder to just reduce our own
+                greenhouse gases while we now need to make up for thousands of
+                these little positive feedback loops caused by the damage
+                already done.
             </div>
             <br />
             <div>
@@ -943,20 +975,22 @@ export const GreenhouseEffect = () => {
                 also mean the collapse of coral reefs. Corals need carbonate
                 ions to build their structures. Through a series of chemical
                 reactions, more CO2 means less concentrated carbonate ions
-                making it harder for corals to build their reefs (D4.3.7). Reefs
-                of course are ubernexuses for ocean biodiversity so reduced
+                making it harder for corals to build their reefs. Reefs of
+                course are ubernexuses for ocean biodiversity (25% of the
+                ocean's fish rely on coral reefs as per
+                noaa.gov/education/resource-collections/marine-life/) so reduced
                 reefs means less biodiversity.
             </div>
             <br />
             <div>
                 Animal behavior also changes in response to climate change. The
                 higher you go the colder the temperatures, so hotter
-                temperatures at traditional layers of elevation of evolution
-                pushes organisms to climb. The range of elevations at which
-                habitats can support certain organisms to live at is rising on
-                mass. Mountain dwelling, or montane organisms with easy access
-                to elevated land are excepted to move up slope as climate change
-                continues to get work. (D4.3.6)
+                temperatures across the board pushes organisms to climb. The
+                range of elevations at which habitats can support certain
+                organisms to live at is rising on mass. Mountain dwelling, or
+                montane organisms with easy access to elevated land are excepted
+                to move up slope to new habitats as climate change continues to
+                get worse.
             </div>
             <br />
             <div>
@@ -967,7 +1001,8 @@ export const GreenhouseEffect = () => {
                 technology that could slow climate change, or natural carbon
                 sequestering like planting plants might be viable. Specifically
                 planting trees can be a natural form of carbon sequestering.
-                (D4.3.8)
+                Like rewiliding fighting greenhouse gases is hard work, but with
+                time we may find ourselves with a sustainable ecosystem.
             </div>
         </div>
     );
